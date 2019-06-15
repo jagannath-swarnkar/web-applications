@@ -1,0 +1,213 @@
+<html>
+<head>
+	<title>Age Calculator</title>
+	<style type="text/css">
+		.body{
+			margin: 0px;
+			width: 100%;
+			height: 500px;
+			font-size: 16px;
+		}
+		
+		.container{
+			margin: 2vw 13vw 0vw 13vw;
+			
+		}
+
+		#header{
+			background-color: green;
+			/*width: 100%;*/
+			display: flex;
+			font-size: 1.5vw;
+			justify-content: center;
+			/*border: 1px solid black;*/
+		}
+		#div1{
+			border: 1px dashed black;
+			font-size: 18px;
+			padding: 5px;
+			text-align: center;
+		}
+		.input{
+			font-size: 20px;
+			padding: 5px;
+			border-radius: 5px;
+			border:1px solid #044284;
+
+		}
+		.submit{
+			font-size: 28px;
+		}
+		input[type="submit"]:hover{
+			background-color: white;
+		}
+		.result{
+			padding: 5px;
+			margin: 5px;
+			border:2px solid red;
+			
+		}
+		@media screen and (max-width: 1000px){
+			.container{
+			/*width: 100%;*/
+			margin: -1vw -1vw 0vw -1vw;
+		}
+		#header{
+			padding: 5px;
+			font-size: 3vw;
+			
+		}
+		#div1{
+			padding: 0;
+			font-size: 25px;
+			text-align: center;
+		}
+		.input{
+			font-size: 40px;
+			padding: 7px;
+			border-radius:  5px;
+			text-align: right;
+			border: 1px solid #044294;
+		}
+		.submit{
+			background-color: white;
+			font-size: 50px;
+			border-color: red;
+			border-radius: 5px;
+			width: 500px;
+			height: 100px;
+		}
+		}
+
+	</style>
+</head> 
+<body bgcolor="lightgrey">
+<!-- 	<script>
+		function myFunction() {
+		  document.getElementById("demo").style.color = "red";
+		}
+	</script> -->
+	<div class="container">
+		<div id="header">
+			<h1>Age Calculator</h1>
+		</div>
+		<div class="result">
+      <h2>Your age is <%= year %> years, <%= month %> months and <%= day %> days. </h2>
+        
+        
+		</div>
+		<div id="div1">
+			<p>The Age Calculator can determine the age or interval between two dates. The calculated age will be displayed in years, months, weeks, days, hours, minutes, and seconds.</p>
+			<div > 
+<form action="https://plant-clownfish.glitch.me/index.html/process_post" method="POST">  
+				<h2>Date Of Birth :
+				<select class="input" name="month">
+					<option value="0">Jan</option>
+					<option value="1">Feb</option>
+					<option value="2">Mar</option>
+					<option value="3">Apr</option>
+					<option value="4">May</option>
+					<option value="5">Jun</option>
+					<option value="6">Jul</option>
+					<option value="7">Aug</option>
+					<option value="8">Sep</option>
+					<option value="9">Oct</option>
+					<option value="10">Nov</option>
+					<option value="11">Dec</option>
+				</select>
+				<select class="input" name="day">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<input value="2000" class="input" name="year" type="text" size="6" maxlength="6" title="Year" value="" >
+			</h2>
+			<h2> Age at the Date of :
+				<select class="input" name="C_month">
+					<option value="0">Jan</option>
+					<option value="1">Feb</option>
+					<option value="2">Mar</option>
+					<option value="3">Apr</option>
+					<option value="4">May</option>
+					<option value="5">Jun</option>
+					<option value="6">Jul</option>
+					<option value="7">Aug</option>
+					<option value="8">Sep</option>
+					<option value="9">Oct</option>
+					<option value="10">Nov</option>
+					<option value="11">Dec</option>
+				</select>
+				<select class="input" name="C_day">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<input value="2000" class="input" name="C_year" type="int" size="6" maxlength="6" title="Year" value="" >
+			</h2>
+			<tr>
+		    	<input class="submit" type="submit" value="Calculate" alt="Calculate" style="margin-top:10px; ">
+			 </tr>  
+</form>  
+</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>  
